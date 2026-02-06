@@ -8,6 +8,11 @@ load_dotenv()
 
 
 class StateStorage:
+    """
+    Docstring для StateStorage
+    Класс для асинхронного сохранения и загрузки состояния устройств в JSON файл.
+    """
+
     def __init__(self):
         # Берем путь из .env, если его нет — используем значение по умолчанию
         self.file_path = os.getenv("STATE_FILE_PATH", "house_state.json")
